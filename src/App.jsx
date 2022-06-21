@@ -4,6 +4,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Feature from "./Feature";
 import About from "./About";
+import SecondaryFeature from "./SecondaryFeature";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Feature />
       <About />
+      <SecondaryFeature />
     </div>
   );
 }
