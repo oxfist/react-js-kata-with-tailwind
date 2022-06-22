@@ -24,11 +24,12 @@ function FeatureHeader() {
 }
 
 function FeatureItem({ title }) {
+  
   return (
     <div className="w-full md:w-1/2 lg:w-4/12">
       <div className="p-8 lg:px-3">
         <div className="content">
-          <h3 className="mb-5">SaaS Focused</h3>
+          <h3 className="mb-5">{title}</h3>
         </div>
       </div>
     </div>
@@ -36,9 +37,10 @@ function FeatureItem({ title }) {
 }
 
 function FeatureGrid() {
+
   return (
     <div className="row flex flex-wrap">
-      <FeatureItem />
+      {FEATURE_ITEMS.map((item)=><FeatureItem title={item} />)}
     </div>
   );
 }
