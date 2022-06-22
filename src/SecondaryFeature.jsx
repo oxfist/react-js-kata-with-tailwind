@@ -7,6 +7,20 @@ const FEATURE_ITEMS = [
   "Highly Optimized",
 ];
 
+const FEATURE_ITEMS_ALL = [
+  { title: "SaaS Focused", enabled: true },
+  { title: "Time Travel", enabled: false },
+  { title: "Awesome Design", enabled: true },
+  { title: "Ugly Colors", enabled: false },
+  { title: "Ready to Use", enabled: true },
+  { title: "Unreadable Code", enabled: false },
+  { title: "Boring Memes", enabled: false },
+  { title: "Vanilla JS", enabled: true },
+  { title: "Essential Sections", enabled: true },
+  { title: "Cryptocurrencies", enabled: false },
+  { title: "Highly Optimized", enabled: true },
+];
+
 function FeatureHeader() {
   return (
     <div className="row flex justify-center">
@@ -36,11 +50,13 @@ function FeatureItem({ title }) {
   );
 }
 
+const getEnabledItems = (items) => items.filter((item) => item.enabled === true)
+
 function FeatureGrid() {
 
   return (
     <div className="row flex flex-wrap">
-      {FEATURE_ITEMS.map((item)=><FeatureItem title={item} />)}
+      {getEnabledItems(FEATURE_ITEMS_ALL).map((item)=><FeatureItem title={item.title} />)}
     </div>
   );
 }
