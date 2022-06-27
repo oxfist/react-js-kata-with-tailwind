@@ -1,3 +1,12 @@
+/**
+ *
+ * A continuación puedes ver 4 ejercicios disponibles para este componente.
+ *
+ * Para cada ejercicio cambia la constante utilizada en el componente
+ * FeatureGrid.
+ *
+ */
+
 /* 1. Mostrar todos los títulos */
 const FEATURE_ITEMS = [
   "SaaS Focused",
