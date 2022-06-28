@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Feature from "./Feature";
 import About from "./About";
 import SecondaryFeature from "./SecondaryFeature";
+import Testimonials from "./Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Feature />
       <About />
       <SecondaryFeature />
+      <Testimonials />
     </div>
   );
 }
