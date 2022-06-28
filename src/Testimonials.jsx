@@ -3,6 +3,28 @@ import dots from "./images/testimonial/testimonial-dots.svg";
 import firstTestimonial from "./images/testimonial/testimonial-1.png";
 import secondTestimonial from "./images/testimonial/testimonial-2.png";
 
+// TODO: agregar imágenes
+const USERS = [
+  { name: "Marisol Hidalgo", occupation: "Engineer", verified: true },
+  { name: "Pascuala Flores", occupation: "Photographer", verified: true },
+  { name: "Alicia Méndez", occupation: "Journalist", verified: false },
+  { name: "Emilia Díaz", occupation: "Chef", verified: true },
+  { name: "Amanda González", occupation: "Artist", verified: false },
+  { name: "Martina Cifuentes", occupation: "Car Mechanic", verified: true },
+  { name: "Francisca Poblete", occupation: "Carpenter", verified: true },
+  { name: "Javiera Morales", occupation: "Designer", verified: false },
+];
+
+/*
+ *
+ * EJERCICIOS JAVASCRIPT
+ *
+ */
+
+/* 1. Muestra solo el primer nombre de personas verificadas */
+/* 2. Ordenar personas por primer nombre, descendente */
+/* 3. Calcular el número de personas verificadas que entregan su testimonio */
+
 function Testimonials() {
   return (
     <section
