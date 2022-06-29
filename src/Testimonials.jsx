@@ -24,6 +24,7 @@ const USERS = [
 /* 1. Muestra solo el primer nombre de personas verificadas */
 
 /* 2. Ordenar personas por primer nombre, descendente */
+
 //crear funcion que acceda a la propiedad "nombre", y con ese valor agregarle un .reverse para ordenar nombres de Z a A
 
 function sortUsersByName() {
