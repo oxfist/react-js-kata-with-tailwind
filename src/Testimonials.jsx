@@ -22,6 +22,14 @@ const USERS = [
  */
 
 /* 1. Muestra solo el primer nombre de personas verificadas */
+/* que tengo que hacer:
+     traer los nombres y que estos sean igual a true
+     después mostrar sólo el primer nombre 
+  */
+const personasVerificadas = (items) =>
+  items.filter((item) => item.verified === true);
+console.log(personasVerificadas(USERS));
+
 /* 2. Ordenar personas por primer nombre, descendente */
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
