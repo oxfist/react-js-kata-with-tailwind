@@ -22,7 +22,30 @@ const USERS = [
  */
 
 /* 1. Muestra solo el primer nombre de personas verificadas */
+<<<<<<< HEAD
+/* que tengo que hacer:
+     traer los nombres y que estos sean igual a true
+     después mostrar sólo el primer nombre 
+  */
+const personasVerificadas = (items) =>
+  items.filter((item) => item.verified === true);
+console.log(personasVerificadas(USERS));
+=======
+>>>>>>> 77fb39088730c4c0c06b3be7168623b19080590f
+
 /* 2. Ordenar personas por primer nombre, descendente */
+
+//crear funcion que acceda a la propiedad "nombre", y con ese valor agregarle un .reverse para ordenar nombres de Z a A
+
+function sortUsersByName() {
+  let sortedUsers = USERS.sort( (a, b) => (a.name > b.name) ? 1 : -1
+  )
+
+  return sortedUsers.reverse();
+}
+console.log(sortUsersByName());
+
+
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
 const checkingPeople = (dataUsers) =>{
