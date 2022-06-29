@@ -22,6 +22,7 @@ const USERS = [
  */
 
 /* 1. Muestra solo el primer nombre de personas verificadas */
+<<<<<<< HEAD
 /* que tengo que hacer:
      traer los nombres y que estos sean igual a true
      después mostrar sólo el primer nombre 
@@ -29,8 +30,22 @@ const USERS = [
 const personasVerificadas = (items) =>
   items.filter((item) => item.verified === true);
 console.log(personasVerificadas(USERS));
+=======
+>>>>>>> 77fb39088730c4c0c06b3be7168623b19080590f
 
 /* 2. Ordenar personas por primer nombre, descendente */
+
+//crear funcion que acceda a la propiedad "nombre", y con ese valor agregarle un .reverse para ordenar nombres de Z a A
+
+function sortUsersByName() {
+  let sortedUsers = USERS.sort( (a, b) => (a.name > b.name) ? 1 : -1
+  )
+
+  return sortedUsers.reverse();
+}
+console.log(sortUsersByName());
+
+
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
 /*
@@ -72,7 +87,12 @@ function Testimonials() {
               <div className="row flex">
                 <div className="w-full lg:w-5/12">
                   <div className="testimonial-img inline-block lg:block text-left lg:text-right relative mb-8 lg:mb-0">
-                    <img src={firstTestimonial} alt="" className="lg:ml-auto" />
+                    <img
+                      src={firstTestimonial}
+                      alt=""
+                      className="lg:ml-auto"
+                      style={{ width: "222px" }}
+                    />
                     <div className="quote">
                       <i className="lni lni-quotation"></i>
                     </div>
@@ -105,9 +125,10 @@ function Testimonials() {
                 <div className="w-full lg:w-5/12">
                   <div className="testimonial-img inline-block lg:block text-left lg:text-right relative mb-8 lg:mb-0">
                     <img
-                      src={secondTestimonial}
+                      src={firstTestimonial}
                       alt=""
                       className="lg:ml-auto"
+                      style={{ width: "222px" }}
                     />
                     <div className="quote">
                       <i className="lni lni-quotation"></i>
