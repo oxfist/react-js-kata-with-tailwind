@@ -1,4 +1,5 @@
 # Kata React + JS
 
-Revisa el componente [`SecondaryFeature`](./src/SecondaryFeature.jsx) para ver
-los ejercicios disponibles con este proyecto.
+Revisa los componentes [`SecondaryFeature`](./src/SecondaryFeature.jsx) y
+[`Testimonials`](./src/Testimonials.jsx) para ver los ejercicios disponibles en
+este proyecto.

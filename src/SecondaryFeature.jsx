@@ -133,7 +133,7 @@ function FeatureItem({ title }) {
 const getEnabledItems = (items) =>
   items.filter((item) => item.enabled === true);
 
-/* Esto está lanzando un error */
+/* 5. Arregla el error que está lanzando este componente  */
 function FeatureGrid() {
   return (
     <div className="row flex flex-wrap">

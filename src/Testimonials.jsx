@@ -24,7 +24,7 @@ const USERS = [
 /* 1. Muestra solo el primer nombre de personas verificadas */
 /* que tengo que hacer:
      traer los nombres y que estos sean igual a true
-     después mostrar sólo el primer nombre 
+     después mostrar sólo el primer nombre
   */
 const traerPersonasVerificadas = (users) =>
   users.filter((user) => user.verified === true);
@@ -43,12 +43,12 @@ console.log(sortUsersByName());
 
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
-function getNumberOfVerifiedUsers(users){
+function getNumberOfVerifiedUsers(users) {
   //filtrar usuarios que estén verficados
   const verifiedUsers = users.filter((user) => user.verified === true);
   // mostrar en consola la cantidad de usuarios verificados
-  return verifiedUsers.length
-};
+  return verifiedUsers.length;
+}
 
 console.log(`Personas verificadas: ${getNumberOfVerifiedUsers(USERS)}`);
 
