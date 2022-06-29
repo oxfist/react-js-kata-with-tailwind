@@ -64,7 +64,12 @@ function Testimonials() {
               <div className="row flex">
                 <div className="w-full lg:w-5/12">
                   <div className="testimonial-img inline-block lg:block text-left lg:text-right relative mb-8 lg:mb-0">
-                    <img src={firstTestimonial} alt="" className="lg:ml-auto" />
+                    <img
+                      src={firstTestimonial}
+                      alt=""
+                      className="lg:ml-auto"
+                      style={{ width: "222px" }}
+                    />
                     <div className="quote">
                       <i className="lni lni-quotation"></i>
                     </div>
@@ -97,9 +102,10 @@ function Testimonials() {
                 <div className="w-full lg:w-5/12">
                   <div className="testimonial-img inline-block lg:block text-left lg:text-right relative mb-8 lg:mb-0">
                     <img
-                      src={secondTestimonial}
+                      src={firstTestimonial}
                       alt=""
                       className="lg:ml-auto"
+                      style={{ width: "222px" }}
                     />
                     <div className="quote">
                       <i className="lni lni-quotation"></i>
