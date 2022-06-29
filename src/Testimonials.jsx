@@ -22,7 +22,19 @@ const USERS = [
  */
 
 /* 1. Muestra solo el primer nombre de personas verificadas */
+
 /* 2. Ordenar personas por primer nombre, descendente */
+//crear funcion que acceda a la propiedad "nombre", y con ese valor agregarle un .reverse para ordenar nombres de Z a A
+
+function sortUsersByName() {
+  let sortedUsers = USERS.sort( (a, b) => (a.name > b.name) ? 1 : -1
+  )
+
+  return sortedUsers.reverse();
+}
+console.log(sortUsersByName());
+
+
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
 /*
