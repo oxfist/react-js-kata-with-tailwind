@@ -25,6 +25,16 @@ const USERS = [
 /* 2. Ordenar personas por primer nombre, descendente */
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
+const checkingPeople = (dataUsers) =>{
+  //filtrar usuarios que estén verficados
+  const check = dataUsers.filter((user)=>user.verified === true);
+  // mostrar en consola la cantidad de usuarios verificados
+  return console.log(`Personas verificadas: ${check.length}`)
+}
+
+checkingPeople(USERS);
+
+
 /*
  *
  * EJERCICIOS REACT
