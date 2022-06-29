@@ -53,13 +53,6 @@ const checkingPeople = (dataUsers) => {
 
 checkingPeople(USERS);
 
-
-/* REVIEW
-*1. código simple y muy claro
-*2. revisar nombres de las variables (check es poco claro, checking)
-*/
-
-
 /*
  *
  * EJERCICIOS REACT
