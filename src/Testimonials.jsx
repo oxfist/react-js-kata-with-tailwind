@@ -22,7 +22,6 @@ const USERS = [
  */
 
 /* 1. Muestra solo el primer nombre de personas verificadas */
-<<<<<<< HEAD
 /* que tengo que hacer:
      traer los nombres y que estos sean igual a true
      después mostrar sólo el primer nombre 
@@ -30,8 +29,6 @@ const USERS = [
 const personasVerificadas = (items) =>
   items.filter((item) => item.verified === true);
 console.log(personasVerificadas(USERS));
-=======
->>>>>>> 77fb39088730c4c0c06b3be7168623b19080590f
 
 /* 2. Ordenar personas por primer nombre, descendente */
 
