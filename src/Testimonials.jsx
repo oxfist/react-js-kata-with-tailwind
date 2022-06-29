@@ -1,9 +1,7 @@
 import shape from "./images/testimonial/testimonial-shape.svg";
 import dots from "./images/testimonial/testimonial-dots.svg";
 import firstTestimonial from "./images/testimonial/testimonial-1.png";
-import secondTestimonial from "./images/testimonial/testimonial-2.png";
 
-// TODO: agregar imágenes
 const USERS = [
   { name: "Marisol Hidalgo", occupation: "Engineer", verified: true },
   { name: "Pascuala Flores", occupation: "Photographer", verified: true },
