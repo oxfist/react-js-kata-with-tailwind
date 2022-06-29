@@ -26,34 +26,31 @@ const USERS = [
      traer los nombres y que estos sean igual a true
      después mostrar sólo el primer nombre 
   */
-const personasVerificadas = (items) =>
-  items.filter((item) => item.verified === true);
-console.log(personasVerificadas(USERS));
+const traerPersonasVerificadas = (users) =>
+  users.filter((user) => user.verified === true);
+console.log(traerPersonasVerificadas(USERS));
 
 /* 2. Ordenar personas por primer nombre, descendente */
 
 //crear funcion que acceda a la propiedad "nombre", y con ese valor agregarle un .reverse para ordenar nombres de Z a A
 
 function sortUsersByName() {
-  let sortedUsers = USERS.sort( (a, b) => (a.name > b.name) ? 1 : -1
-  )
+  let sortedUsers = USERS.sort((a, b) => (a.name > b.name ? 1 : -1));
 
   return sortedUsers.reverse();
 }
 console.log(sortUsersByName());
 
-
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
-const checkingPeople = (dataUsers) =>{
+function getNumberOfVerifiedUsers(users){
   //filtrar usuarios que estén verficados
-  const check = dataUsers.filter((user)=>user.verified === true);
+  const verifiedUsers = users.filter((user) => user.verified === true);
   // mostrar en consola la cantidad de usuarios verificados
-  return console.log(`Personas verificadas: ${check.length}`)
-}
+  return verifiedUsers.length
+};
 
-checkingPeople(USERS);
-
+console.log(`Personas verificadas: ${getNumberOfVerifiedUsers(USERS)}`);
 
 /*
  *
