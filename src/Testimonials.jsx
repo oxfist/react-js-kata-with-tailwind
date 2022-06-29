@@ -25,6 +25,15 @@ const USERS = [
 /* 2. Ordenar personas por primer nombre, descendente */
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
+/*
+ *
+ * EJERCICIOS REACT
+ *
+ */
+
+/* 1. Muestra el nombre de la persona en un alert cada vez que se hace click en la foto */
+/* 2. Cuando se hagan 5 clicks en la foto, invertirla verticalmente */
+
 function Testimonials() {
   return (
     <section
