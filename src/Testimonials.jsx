@@ -1,9 +1,7 @@
 import shape from "./images/testimonial/testimonial-shape.svg";
 import dots from "./images/testimonial/testimonial-dots.svg";
 import firstTestimonial from "./images/testimonial/testimonial-1.png";
-import secondTestimonial from "./images/testimonial/testimonial-2.png";
 
-// TODO: agregar imágenes
 const USERS = [
   { name: "Marisol Hidalgo", occupation: "Engineer", verified: true },
   { name: "Pascuala Flores", occupation: "Photographer", verified: true },
@@ -24,7 +22,7 @@ const USERS = [
 /* 1. Muestra solo el primer nombre de personas verificadas */
 /* que tengo que hacer:
      traer los nombres y que estos sean igual a true
-     después mostrar sólo el primer nombre 
+     después mostrar sólo el primer nombre
   */
 const personasVerificadas = (items) =>
   items.filter((item) => item.verified === true);
@@ -44,14 +42,14 @@ console.log(sortUsersByName(USERS));
 
 /* 3. Calcular el número de personas verificadas que entregan su testimonio */
 
-const checkingPeople = (dataUsers) => {
+function getNumberOfVerifiedUsers(users) {
   //filtrar usuarios que estén verficados
-  const check = dataUsers.filter((user)=>user.verified === true);
+  const verifiedUsers = users.filter((user) => user.verified === true);
   // mostrar en consola la cantidad de usuarios verificados
-  return console.log(`Personas verificadas: ${check.length}`)
+  return verifiedUsers.length;
 }
 
-checkingPeople(USERS);
+console.log(`Personas verificadas: ${getNumberOfVerifiedUsers(USERS)}`);
 
 /*
  *
